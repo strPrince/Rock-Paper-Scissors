@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+</head>
+<body>
+   <video id="vdo"src="./images/spc.mp4" autoplay muted loop></video>
+  <h1 id="myText">Rock Paper Scissors</h1>
+
+  <div class="options-btn">
+    <button data-choice="rock"><img src="images/rock.png" alt="Rock"></button>
+    <button data-choice="paper"><img src="images/paper.png" alt="Paper"></button>
+    <button data-choice="scissors"><img src="images/scissors.png" alt="Scissors"></button>
+  </div>
+
+  <div id="playerChoice"></div>
+  <div id="computerChoice"></div>
+<div class="msg">
+  <p id="result"></p></div>
+
+  <div class="wins-display">
+    <table>
+
+   <tr>
+    <td><p id="userWins">You: 0</p></td>
+    <td><p id="computerWins">Computer : 0</p></td>
+</tr>
+</table>
+  </div>
+
+  
+  <div id="snack"></div>
+  
+  <script src="script.js">   $(function () {
+    $("#snack").dialog();
+  });</script>
+</body>
+</html>
