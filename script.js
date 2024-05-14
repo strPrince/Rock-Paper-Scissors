@@ -68,12 +68,10 @@ function getComputerChoice() {
     image: `images/${computerSelection}.png`,
   };
 }
-
 function determineWinner(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     return "It's a tie!";
   }
-
   if (playerChoice === "rock") {
     if (computerChoice === "scissors") {
       return "You win!";
@@ -81,7 +79,6 @@ function determineWinner(playerChoice, computerChoice) {
       return "You lose!";
     }
   }
-
   if (playerChoice === "paper") {
     if (computerChoice === "rock") {
       return "You win!";
